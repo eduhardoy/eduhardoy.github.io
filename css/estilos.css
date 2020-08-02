@@ -488,6 +488,17 @@ h2 {
     justify-content: center;
     margin-top: 0px;
   }
+
+.photopart {
+  width: 250px;
+  height: 250px;
+}
+
+  .profileimg {
+    width: 100%;
+    height: 100%;
+    border-radius:150px;
+  }
 @media screen and (max-width: 480px) {
   h1 {
     font-size: 30px;
@@ -517,6 +528,11 @@ h2 {
     justify-content: center;
   }
 
+  .photopart {
+    width: 180px;
+    height: 180px;
+  }
+
   .contact{
     height: auto;
     padding: 1.5em 0;
@@ -539,6 +555,7 @@ h2 {
   }
 }
 
+
 @media screen and (max-width: 320px) {
   h1 {
     font-size: 28px;
@@ -557,5 +574,11 @@ h2 {
   height: 30px;
   background-size: 100%;
 }
+
+.photopart {
+  width: 150px;
+  height: 150px;
+}
+
 
 }
