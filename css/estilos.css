@@ -77,6 +77,11 @@ h2 {
   margin-bottom: 40px;
 }
 
+h5 {
+  color: #1e1e1e;
+  font-size: 20px;
+}
+
 .header {
   background-color: #1e1e1e;
   color: white;
@@ -199,6 +204,27 @@ figure {
   background-color: #cceaf4;
 }
 
+.aboutdetail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -80px;
+}
+
+.biografia {
+  width: 65%;
+}
+
+.photopart {
+  width: 30%;
+}
+
+.profileimg {
+  width: 300px;
+  height: 300px;
+  border-radius:150px;
+}
+
 .contact {
   background-color: #ff3b3f;
   color: white;
@@ -278,18 +304,18 @@ figure {
 }
 
 .burger-button {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
-  background-color: rgba(255,59,63, 0.8);
+  background-color: rgb(255,59,63);
   display: none;
-  line-height: 40px;
+  line-height: 30px;
   text-align: center;
   position: fixed;
   z-index: 4;
-  left: 5px;
-  top: 5px;
-  color: #cceaf4;
+  right: 10px;
+  top: 10px;
+  color: white;
 }
 
 /* Desktop first - empezar del mas grande */
@@ -339,9 +365,26 @@ h2 {
   margin: .5em 0;
 }
 
+.aboutdetail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0px;
+}
+
+.profileimg {
+  width: 100%;
+  height: 100%;
+  border-radius:150px;
+}
+
 @media screen and (max-width: 767px) {
 
   h2 {
+    font-size: 25px;
+  }
+
+  h5 {
     font-size: 20px;
   }
 
@@ -423,7 +466,7 @@ h2 {
   }
 
   .project-url {
-    font-size: 1em;
+    font-size: 1.5em;
   }
 
   .project-course {
@@ -438,6 +481,13 @@ h2 {
     font-size: .8em;
   }
 
+  .aboutdetail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+  }
 @media screen and (max-width: 480px) {
   h1 {
     font-size: 30px;
@@ -447,9 +497,24 @@ h2 {
     font-size: 30px;
   }
 
+  h2 {
+    font-size: 22px;
+  }
+
+  h5 {
+    font-size: 18px;
+  }
+
     .project-details {
     width: auto;
-    font-size: 14px;
+    font-size: 16px;
+  }
+
+  .aboutdetail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .contact{
@@ -476,8 +541,13 @@ h2 {
 
 @media screen and (max-width: 320px) {
   h1 {
-    font-size: 1.2em;
+    font-size: 28px;
 }
+
+  h1 strong {
+    font-size: 20px;
+}
+
 .hero {
   padding: 2em 1em;
 }
@@ -486,4 +556,6 @@ h2 {
   width: 30px;
   height: 30px;
   background-size: 100%;
+}
+
 }
