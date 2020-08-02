@@ -1,123 +1,126 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF—8" />
-    <title>Edu Hardoy</title>
-    <link rel="icon" type="image/png" href="images/logo.png">
-    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/styles.css">
+    <meta charset="UTF-8" />
+    <title>Eduardo J. Hardoy</title>
+    <link rel="icon" type="image/png" href="images/logo.png" />
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
+    <i class="icon-menu burger-button" id="burger-menu"></i>
     <header class="header">
       <div class="container">
-        <figure>
-          <img class="headerimage" src="images/ehheader.png" alt="logoeh">
+        <figure class="logo">
+          <img src="images/ehheader.png" height="80" alt="Logo de http://leonidasesteban.com" />
         </figure>
+        <nav class="menu">
+          <ol>
+            <li>
+              <a class="link border" href="#portafolio">Projects</a>
+            </li>
+            <li>
+              <a class="link border" href="#about">About Me</a>
+            </li>
+            <li>
+              <a class="link border" href="#contacto">Contact</a>
+            </li>
+          </ol>
+        </nav>
       </div>
     </header>
     <section class="hero">
       <div class="container">
         <h1>
-          Hola! Soy <strong>Edu Hardoy</strong> <br> Desarrollador<strong>Javascript</strong>
+          Eduardo J. Hardoy <br> <strong>Full Stack Javascript Developer</strong>
         </h1>
-        <!-- <img  class="hero-image" src="images/banner.jpg" width="500" height="300" alt="Imagen Principal del Sitio"> -->
       </div>
-    </section> 
-    <section id="portafolio" class="portfolio"> 
+    </section>
+    <section id="portafolio" class="portfolio">
       <div class="container">
-        <h2>Portafolio (Proyectos Destacados)</h2>
-        <article class="project">
-          <div class="project-details" >
+        <h2>Projects</h2>
+      <article class="project">
+        <div class="project-details">
+          <h3 class="project-title">Platzi Video</h3>
+          <h6 class="project-course">React Native / React</h6>
+          <p class="project-date"><small><strong>Fecha:</strong> 01/07/2018</small></p>
+          <p class="project-url"><small><strong>Puedes verlo en:</strong> www.platzi.com/native</small></p>
+          <p class="project-description">Platzi Video fue el resultado de 3 meses de trabajo
+              para crear la mejor app para enseñar el funcionamiento
+              de React y React Native. Desde crear un vista-detalle, hasta patrones avanzados de nevegación, este proyecto ha sido el ejemplo de futuros creadores de aplicaciones multiplataforma</p>
+        </div>
+        <figure class="project-imageContainer">
+          <img class="project-image" width="500" src="images/platzi-video-react-native.png" alt="prouyecto del curso de React Native">
+        </figure>
+      </article>
+      <article class="project">
+          <div class="project-details">
             <h3 class="project-title">Platzi Video</h3>
             <h6 class="project-course">React Native / React</h6>
-            <p class="project-date"><small><strong>Fecha:</strong> 07/07/2020</small></p>
+            <p class="project-date"><small><strong>Fecha:</strong> 01/07/2018</small></p>
             <p class="project-url"><small><strong>Puedes verlo en:</strong> www.platzi.com/native</small></p>
-            <p class="project-description">Platzi Video fue el resultado de 3 meses de trabajo 
-              para crear la mejor app para enseñar el funcionamiento 
-              de React y React Native. Desde crear un vista-detalle, hasta patrones avanzados de navegación, este proyecto ha sido el ejemplo de futuros creadores de aplicaciones multiplataforma.</p>
+            <p class="project-description">Platzi Video fue el resultado de 3 meses de trabajo
+                para crear la mejor app para enseñar el funcionamiento
+                de React y React Native. Desde crear un vista-detalle, hasta patrones avanzados de nevegación, este proyecto ha sido el ejemplo de futuros creadores de aplicaciones multiplataforma</p>
           </div>
-            <figure class="project-imageContainer">
-              <img class="project-image" width="500" src="images/platzi-video-react-native.png" alt="Proyecto del curso de React Native">
-            </figure>
-        </article>
-        <article class="project">
-          <div class="project-details" >
-            <h3 class="project-title">Platzi Video</h3>
-            <h6 class="project-course">React Native / React</h6>
-            <p class="project-date"><small><strong>Fecha:</strong> 07/07/2020</small></p>
-            <p class="project-url"><small><strong>Puedes verlo en:</strong> www.platzi.com/native</small></p>
-            <p class="project-description">Platzi Video fue el resultado de 3 meses de trabajo 
-              para crear la mejor app para enseñar el funcionamiento 
-              de React y React Native. Desde crear un vista-detalle, hasta patrones avanzados de navegación, este proyecto ha sido el ejemplo de futuros creadores de aplicaciones multiplataforma.</p>
-          </div>
-            <figure class="project-imageContainer">
-              <img class="project-image" width="500" src="images/platzi-video-react-native.png" alt="Proyecto del curso de React Native">
-            </figure>
+          <figure class="project-imageContainer">
+            <img class="project-image" width="500" src="images/platzi-video-react-native.png" alt="prouyecto del curso de React Native">
+          </figure>
         </article>
       </div>
     </section>
-    <section class="event-bigtitle" >
+    <section id="about" class="aboutme">
       <div class="container">
-        <h2 class="event-list-title">Más sobre mi Experiencia</h2>
-      </div>
-    </section>
-    <section id="eventos" class="event-list">
-      <div class="container">
-        <article class="event">
-          <figure class="evente-imageContariner">
-            <img class="event-image" src="images/web.png">
-          </figure>
-          <div class="event-detail">
-            <h3 class="event-title">Curso de Desarrollo Web Online</h3>
-            <p class="event-description">En este curso, Leonidas Esteban te da una introducción al mundo del desarrollo web que te será de mucha utilidad, tanto si quieres convertirte en un programador Backend, como si tu objetivo es ser un programador Frontend. Aprenderás a codificar los documentos necesarios para que tu sitio web se vea y se pueda acceder a través de internet.</p>
-            <a class="event-url" href="https://platzi.com/clases/html5-css3/" target="_blank">Ver Curso</a>
-          </div>
-        </article>
-        <article class="event">
-          <figure class="evente-imageContariner">
-            <img class="event-image" src="images/web.png">
-          </figure>
-          <div class="event-detail">
-            <h3 class="event-title">Curso de Desarrollo Web Online</h3>
-            <p class="event-description">En este curso, Leonidas Esteban te da una introducción al mundo del desarrollo web que te será de mucha utilidad, tanto si quieres convertirte en un programador Backend, como si tu objetivo es ser un programador Frontend. Aprenderás a codificar los documentos necesarios para que tu sitio web se vea y se pueda acceder a través de internet.</p>
-            <a class="event-url" href="https://platzi.com/clases/html5-css3/" target="_blank">Ver Curso</a>
-          </div>
-        </article>
-        <article class="event">
-          <figure class="evente-imageContariner">
-            <img class="event-image" src="images/web.png">
-          </figure>
-          <div class="event-detail">
-            <h3 class="event-title">Curso de Desarrollo Web Online</h3>
-            <p class="event-description">En este curso, Leonidas Esteban te da una introducción al mundo del desarrollo web que te será de mucha utilidad, tanto si quieres convertirte en un programador Backend, como si tu objetivo es ser un programador Frontend. Aprenderás a codificar los documentos necesarios para que tu sitio web se vea y se pueda acceder a través de internet.</p>
-            <a class="event-url" href="https://platzi.com/clases/html5-css3/" target="_blank">Ver Curso</a>
-          </div>
-        </article>
-        <article class="event">
-          <figure class="evente-imageContariner">
-            <img class="event-image" src="images/web.png">
-          </figure>
-          <div class="event-detail">
-            <h3 class="event-title">Curso de Desarrollo Web Online</h3>
-            <p class="event-description">En este curso, Leonidas Esteban te da una introducción al mundo del desarrollo web que te será de mucha utilidad, tanto si quieres convertirte en un programador Backend, como si tu objetivo es ser un programador Frontend. Aprenderás a codificar los documentos necesarios para que tu sitio web se vea y se pueda acceder a través de internet.</p>
-            <a class="event-url" href="https://platzi.com/clases/html5-css3/" target="_blank">Ver Curso</a>
-          </div>
-        </article>
+        <h2>ABOUT ME</h2>
       </div>
     </section>
     <section id="contacto" class="contact">
       <div class="container">
+        <form action="/suscripcion/" class="form-email">
+          <h3>Do you want to create something together?</h3>
+          <input type="text" placeholder="Your email" id="email">
+          <button>SEND</button>
+        </form>
         <div class="social">
-          <a href="https://twitter.com/eduhardoy95" class="social-link twitter"></a>
-          <a href="https://facebook.com/edu.hardoy" class="social-link facebook"></a>
-          <a href="https://github.com/eduhardoy" class="social-link github"></a>
-          <a href="https://instagram.com/eduhardoy" class="social-link instagram"></a>
+          <a href="https://twitter.com/eduhardoy95" class="social-link icon-twitter"></a>
+          <a href="https://facebook.com/edu.hardoy" class="social-link icon-facebook"></a>
+          <a href="https://github.com/eduhardoy" class="social-link icon-github"></a>
         </div>
       </div>
     </section>
-    <footer class="footer" >
+    <footer class="footer">
       <div class="container">
+        <p> 
+          <a href="https://github.com/eduhardoy">Design by @eduhardoy</a>
+        </p>
       </div>
     </footer>
+    <script>
+      const ipad = window.matchMedia('screen and (max-width: 767px)');
+      const menu = document.querySelector('.menu');
+      const burgerButton = document.querySelector('#burger-menu')
+
+
+      ipad.addListener(validation)
+
+      function validation(event) {
+        if (event.matches){
+          burgerButton.addEventListener('click', hideShow)
+        } else {
+          burgerButton.removeEventListener('click', hideShow)
+        }
+      }
+      validation(ipad);
+
+
+      function hideShow () {
+        if (menu.classList.contains('is-active')) {
+          menu.classList.remove('is-active')
+        } else {
+        menu.classList.add('is-active');
+        }
+      }
+    </script>
   </body>
 </html>
