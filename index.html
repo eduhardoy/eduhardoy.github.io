@@ -131,12 +131,17 @@
         </div>
       </div>
     </section>
-    <section id="contacto" class="contact">
+    <section action="URL" id="contacto" class="contact">
       <div class="container">
-        <form action="/suscripcion/" class="form-message">
+        <form class="form-message" id="myForm">
           <h3>Do you want to create something together?</h3>
-          <input type="text" placeholder="Leave your message" id="message" />
-          <button>SEND</button>
+          <input
+            type="text"
+            placeholder="Leave your message"
+            id="message"
+            required
+          />
+          <button type="submit" class="wppbutton">Send</button>
         </form>
         <div class="social">
           <a
@@ -194,6 +199,15 @@
           menu.classList.add("is-active");
         }
       }
+
+      const form = document.getElementById("myForm");
+      const message = document.getElementById("message");
+
+      myForm.addEventListener("submit", e => {
+        let text = document.getElementById("message").value;
+        e.preventDefault();
+        window.open(`Https://wa.me/5493794290578?text=${text}`, "_blank");
+      });
     </script>
   </body>
 </html>
