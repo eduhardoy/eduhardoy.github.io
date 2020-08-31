@@ -254,7 +254,7 @@ figure {
   align-items: center;
 }
 
-.form-email input {
+.form-message input {
   border-color: #ff3b3f;
   border-style: solid;
   border-radius: 5px;
@@ -262,7 +262,7 @@ figure {
   background-size: 15px 15px;
 }
 
-.form-email button {
+.form-message button {
   display: block;
   background: #1b2127;
   color: white;
@@ -273,7 +273,7 @@ figure {
   margin-top: 10px;
 }
 
-.form-email h3 { 
+.form-message h3 { 
   font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -544,11 +544,11 @@ h2 {
     display: block;
   }
 
-  .form-email button {
+  .form-message button {
     margin: 1em auto;
   }
 
-  .form-email h3{
+  .form-message h3{
     margin-top: 0;
   }
   

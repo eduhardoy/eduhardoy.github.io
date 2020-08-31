@@ -133,9 +133,9 @@
     </section>
     <section id="contacto" class="contact">
       <div class="container">
-        <form action="/suscripcion/" class="form-email">
+        <form action="/suscripcion/" class="form-message">
           <h3>Do you want to create something together?</h3>
-          <input type="text" placeholder="Your email" id="email" />
+          <input type="text" placeholder="Leave your message" id="message" />
           <button>SEND</button>
         </form>
         <div class="social">
@@ -167,6 +167,16 @@
       const burgerButton = document.querySelector("#burger-menu");
 
       ipad.addListener(validation);
+      ipad.addListener(validationmenu);
+
+      function validationmenu(event) {
+        if (event.matches) {
+          menu.addEventListener("click", hideShow);
+        } else {
+          menu.removeEventListener("click", hideShow);
+        }
+      }
+      validationmenu(ipad);
 
       function validation(event) {
         if (event.matches) {
