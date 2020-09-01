@@ -277,6 +277,10 @@ figure {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+.input {
+  font-size: 16px;
+}
+
 .footer {
   color: white;
   background-color: #1e1e1e;
@@ -582,7 +586,4 @@ h2 {
 .photopart {
   width: 150px;
   height: 150px;
-}
-
-
 }
