@@ -165,7 +165,7 @@ figure {
   padding: 20px;
   background: white;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   flex-wrap: wrap;
   box-shadow: 1px 1px 10px 1px lightgray;
@@ -175,10 +175,11 @@ figure {
 .project-date,
 .project-url {
   margin: 10px 0;
+  font-size: 25px;
 }
 
 .project-description {
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .project strong {
@@ -197,6 +198,8 @@ figure {
 
 .project-imageContainer {
   width: 50%;
+  background-color: #ff3b3f;
+  border-radius: 10px;
 }
 
 .project-imageContainer img {
@@ -386,6 +389,26 @@ h2 {
   border-radius:150px;
 }
 
+.project-title {
+  font-size: 22px;
+}
+
+.project-url {
+  font-size: 22px;
+}
+
+.project-course {
+  font-size: 22px;
+}
+
+.project-date {
+  font-size: 22px;
+}
+
+.project-description {
+  font-size: 18px;
+}
+
 @media screen and (max-width: 767px) {
 
   h2 {
@@ -470,23 +493,23 @@ h2 {
   }
 
   .project-title {
-    font-size: 1.5em;
+    font-size: 20px;
   }
 
   .project-url {
-    font-size: 1.5em;
+    font-size: 20px;
   }
 
   .project-course {
-    font-size: .7em;
+    font-size: 20px;
   }
 
   .project-date {
-    font-size: 1em;
+    font-size: 20px;
   }
 
   .project-description {
-    font-size: .8em;
+    font-size: 18px;
   }
 
   .aboutdetail {
